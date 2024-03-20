@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-tiptap-editor",
-  "version": "1.1.0",
-  "description": "Essentials to Quickly Integrate TipTap Editor into your Nuxt App",
-  "repository": "modbender/nuxt-tiptap-editor",
+  "name": "nuxt-alice-editor",
+  "version": "1.0.0",
+  "description": "Essentials to Quickly Integrate Alice Editor into your Nuxt App",
+  "repository": "ron-manzano/nuxt-alice-editor",
   "keywords": [
     "vue",
     "vue.js",
@@ -29,8 +29,8 @@
   ],
   "scripts": {
     "prepack": "nuxt-module-build build",
-    "dev": "nuxi dev playground",
-    "build": "nuxi build playground",
+    "dev": "nuxi dev playground --dotenv ../../.env",
+    "build": "nuxi build playground --dotenv ../../.env",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
     "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
     "lint": "eslint .",

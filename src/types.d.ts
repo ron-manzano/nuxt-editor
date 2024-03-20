@@ -282,12 +282,12 @@ export interface ModuleOptions {
       };
 }
 
-declare module "nuxt-tiptap-editor" {
+declare module "nuxt-alice-editor" {
   interface NuxtConfig {
-    tiptap?: ModuleOptions;
+    editor?: ModuleOptions;
   }
 
   interface NuxtOptions {
-    tiptap?: ModuleOptions;
+    editor?: ModuleOptions;
   }
 }
